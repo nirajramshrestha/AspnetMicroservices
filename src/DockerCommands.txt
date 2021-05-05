@@ -1,0 +1,17 @@
+To take the containers up with docker-compose (run container)
+docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
+
+To take the containers down with docker-compose (stop container)
+docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down
+
+To see currently running containers
+docker ps
+
+To see currently running and stopped container
+docker ps -a
+
+To stop container from docker
+docker stop <container id>
+
+To remove container from docker
+docker rm <container id>
