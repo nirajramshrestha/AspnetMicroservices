@@ -15,3 +15,12 @@ docker stop <container id>
 
 To remove container from docker
 docker rm <container id>
+
+To stop all docker container
+docker stop $(docker ps -aq)
+
+To remove all docker container
+docker rm $(docker ps -aq)
+
+To remove all the images
+docker rmi $(docker images -q)
