@@ -37,7 +37,7 @@ namespace Basket.API.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(ShoppingCart), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<ShoppingCart>> UpdateBasket([FromBody] ShoppingCart basket) {
-            // to-do we will get discount here and update basket.
+            // get discount from discount GRPC services here and update basket.
             foreach (var item in basket.Items) {
                 var coupon = await _discountGrpcService.GetDiscount(item.ProductName);
                 item.Price -= coupon.Amount;
