@@ -25,5 +25,6 @@ docker rm $(docker ps -aq)
 To remove all the images
 docker rmi $(docker images -q)
 
-To up docker with build if there is any change in the code.
+To up docker with build if there is any change in the code. First you need to stop the running container.
+docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down 
 docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up --build
