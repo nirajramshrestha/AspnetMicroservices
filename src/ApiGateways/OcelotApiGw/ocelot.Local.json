@@ -12,13 +12,13 @@
       ],
       "UpstreamPathTemplate": "/Catalog",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
-      "RateLimitOptions": {
-        "ClientWhitelist": [],
-        "EnableRateLimiting": true,
-        "Period": "5s",
-        "PeriodTimespan": 1,
-        "Limit": 1
-      },
+      //"RateLimitOptions": {
+      //  "ClientWhitelist": [],
+      //  "EnableRateLimiting": true,
+      //  "Period": "5s",
+      //  "PeriodTimespan": 1,
+      //  "Limit": 1
+      //},
       "FileCacheOptions": { "TtlSeconds": 30 }
     },
     {
