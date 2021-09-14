@@ -38,17 +38,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infrastructure", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuldingBlocks", "BuldingBlocks", "{A21EFEDC-FC62-4389-A0A4-FEF7591DD422}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{4A4E8877-2905-4984-9C81-8CC3BCE77F08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Messages", "BuildingBlocks\EventBus.Messages\EventBus.Messages.csproj", "{4A4E8877-2905-4984-9C81-8CC3BCE77F08}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{F3043294-D946-46BC-8723-53D09D1A871F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGw", "ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{05090DA8-0CB7-4C04-803C-93C7286300DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.Aggregrator", "ApiGateways\Shopping.Aggregrator\Shopping.Aggregrator.csproj", "{2028AA4D-3C94-4A49-99E4-B4A1906FE87D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Aggregrator", "ApiGateways\Shopping.Aggregrator\Shopping.Aggregrator.csproj", "{2028AA4D-3C94-4A49-99E4-B4A1906FE87D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{488557F9-6208-43BA-A76C-EBD543B20B0C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspnetRunBasics", "WebApps\AspnetRunBasics\AspnetRunBasics.csproj", "{ED5B2201-5865-41B9-A2F2-285F9D7D6306}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{9CF7BDF4-9151-47EC-8777-7371D675E08F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity.API", "Services\Identity\Identity.API\Identity.API.csproj", "{1B709EAB-4CFD-4C8B-94EF-6C4FC038EA46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,6 +112,10 @@ Global
 		{ED5B2201-5865-41B9-A2F2-285F9D7D6306}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED5B2201-5865-41B9-A2F2-285F9D7D6306}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED5B2201-5865-41B9-A2F2-285F9D7D6306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B709EAB-4CFD-4C8B-94EF-6C4FC038EA46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B709EAB-4CFD-4C8B-94EF-6C4FC038EA46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B709EAB-4CFD-4C8B-94EF-6C4FC038EA46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B709EAB-4CFD-4C8B-94EF-6C4FC038EA46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +137,8 @@ Global
 		{05090DA8-0CB7-4C04-803C-93C7286300DF} = {F3043294-D946-46BC-8723-53D09D1A871F}
 		{2028AA4D-3C94-4A49-99E4-B4A1906FE87D} = {F3043294-D946-46BC-8723-53D09D1A871F}
 		{ED5B2201-5865-41B9-A2F2-285F9D7D6306} = {488557F9-6208-43BA-A76C-EBD543B20B0C}
+		{9CF7BDF4-9151-47EC-8777-7371D675E08F} = {8A121D0D-34A2-4B29-A0B8-ACF4FCC40D10}
+		{1B709EAB-4CFD-4C8B-94EF-6C4FC038EA46} = {9CF7BDF4-9151-47EC-8777-7371D675E08F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BDC0465-0D33-4064-81CA-0446A783EC5D}

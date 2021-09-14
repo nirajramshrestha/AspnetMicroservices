@@ -159,3 +159,17 @@ services:
       - ordering.api
     ports:
       - "8006:80"
+
+  identity.api:
+    container_name: identity.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "Jwt:Key=834556E3-B441-4D01-BF30-779EE6994EFD"
+      - "Jwt:Issuer=Test"
+      - "Jwt:Audience=Test"
+      - "Jwt:TokenUserName=Identity"
+      - "Jwt:TokenPassword=Identity"
+      - "Jwt:TokenExpirationSeconds=1000"
+    ports:
+      - "8007:80"
+
